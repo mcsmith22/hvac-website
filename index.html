@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>HVASee — Smart HVAC Diagnostics</title>
+  <meta
+    name="description"
+    content="HVASee gives technicians and homeowners real-time, AI-powered insights to keep HVAC systems running efficiently."
+  />
+
+  <!-- Google Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <h1 class="logo">HVASee</h1>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#demo" class="btn btn--primary">Request Demo</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h2 class="hero__headline">
+          AI-Powered Diagnostics<br />
+          for Every HVAC System
+        </h2>
+        <p class="hero__subhead">
+          Instantly detect faults, prevent breakdowns, and slash energy waste
+          with plug-and-play sensors and intuitive insights.
+        </p>
+        <a href="#demo" class="btn btn--primary btn--lg">Get Started</a>
+      </div>
+      <div class="hero__image">
+        <img
+          src="https://placehold.co/500x400?text=Dashboard+Mockup"
+          alt="HVASee dashboard screenshot"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h3 class="section__title">Key Features</h3>
+      <div class="features__grid">
+        <div class="feature">
+          <h4>Real-Time Alerts</h4>
+          <p>Catch issues the moment they arise—before users feel the heat (or cold).</p>
+        </div>
+        <div class="feature">
+          <h4>AI Fault Prediction</h4>
+          <p>Machine-learning models analyze trends to predict component failures.</p>
+        </div>
+        <div class="feature">
+          <h4>Energy Optimization</h4>
+          <p>Actionable recommendations reduce consumption and operating costs.</p>
+        </div>
+        <div class="feature">
+          <h4>Technician Dashboard</h4>
+          <p>Fleet-wide monitoring with roll-up analytics for service pros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h3 class="section__title">How It Works</h3>
+      <ol class="steps">
+        <li><span class="steps__num">1</span>Snap HVASee sensors onto the HVAC unit.</li>
+        <li><span class="steps__num">2</span>Data streams securely to the cloud.</li>
+        <li><span class="steps__num">3</span>Algorithms diagnose performance in real time.</li>
+        <li><span class="steps__num">4</span>Users receive alerts &amp; savings tips in the app.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact__inner">
+      <h3 class="section__title">Stay in the Loop</h3>
+      <p>Join our beta list or reach out with partnership inquiries.</p>
+      <form
+        class="contact__form"
+        action="https://formspree.io/f/your-id"
+        method="POST"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit" class="btn btn--primary">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 HVASee Inc. All rights reserved.</p>
+      <a href="mailto:info@hvasee.com">info@hvasee.com</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
